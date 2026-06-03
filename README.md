@@ -428,7 +428,167 @@ Despite these limitations, the project demonstrates the relative safety impact o
 
 ---
 
-## 15. Additional Materials
+## 15. Future Directions
+
+This project verified the safety impact of latency-critical networking technologies under controlled autonomous platooning scenarios. The results show that reducing delay, stabilizing jitter, preventing packet loss, and improving wireless reliability can directly affect collision avoidance.
+
+However, real autonomous driving networks will require a larger and more integrated communication architecture. Based on current industry and standardization trends, this project can be extended in the following directions.
+
+### 15.1 Large-Scale V2X Deployment
+
+A natural extension of this project is to move from a small platooning scenario to a larger V2X environment. Real autonomous driving will not depend only on vehicle-to-vehicle communication. It will also require vehicle-to-infrastructure, vehicle-to-pedestrian, and vehicle-to-network communication.
+
+The U.S. Department of Transportation released a national V2X deployment plan to accelerate vehicle-to-everything technologies for road safety, mobility, and efficiency. This shows that the core idea of this project, delivering safety-critical messages quickly and reliably, is directly connected to real transportation infrastructure development.
+
+Future simulations could include:
+
+- roadside units (RSUs)
+- intersections and traffic lights
+- pedestrians and cyclists
+- emergency vehicles
+- mixed traffic with autonomous and human-driven vehicles
+- infrastructure-assisted warning messages
+
+This would make the simulation closer to a real connected transportation system.
+
+### 15.2 From Average Latency to Guaranteed Latency
+
+This project compared delay, jitter, packet loss, and collision results. In future autonomous driving networks, the goal should move beyond reducing average latency. The more important requirement is guaranteeing bounded worst-case latency.
+
+IETF DetNet documents describe how packet networks are evolving from bandwidth-guaranteed QoS to latency-guaranteed QoS. This means future networks should not only provide high throughput, but also guarantee that safety-critical packets arrive within a predictable time bound.
+
+Future work could therefore evaluate:
+
+- worst-case end-to-end latency
+- bounded jitter
+- maximum tolerable delay before collision
+- guaranteed delivery deadline for emergency braking messages
+- deterministic scheduling under heavy background traffic
+
+This direction would make the project more aligned with deterministic networking research and real safety-critical system requirements.
+
+### 15.3 Scaling TSN and DetNet Beyond a Small Network
+
+This project tested TSN and DetNet in controlled scenarios. However, real roads and smart transportation systems require much larger networks. As the number of vehicles, roadside units, switches, and wireless nodes increases, deterministic communication becomes more difficult.
+
+Future work could extend this project by evaluating large-scale DetNet and TSN environments. The key question would be:
+
+> Can deterministic latency and reliable packet delivery still be guaranteed when the network becomes large and complex?
+
+Important future topics include:
+
+- scalable deterministic routing
+- resource reservation for many critical flows
+- congestion control for mixed traffic
+- packet replication overhead
+- synchronization across larger networks
+- survivability under multiple simultaneous failures
+
+This is important because DetNet and TSN must eventually operate not only in small test scenarios, but also in city-scale transportation networks.
+
+### 15.4 5G-Advanced and 6G-Based Autonomous Mobility
+
+URLLC is one of the most important wireless technologies for autonomous driving, but wireless communication is still evolving. 3GPP Release 19 is part of the 5G-Advanced evolution and introduces further enhancements across radio access, core networks, and system architecture.
+
+This means that future autonomous driving networks may depend on more advanced wireless systems than the URLLC model tested in this project.
+
+Future research could investigate:
+
+- 5G-Advanced V2X
+- 6G ultra-low-latency mobility networks
+- integrated sensing and communication
+- AI-native radio resource control
+- satellite-assisted vehicle communication
+- high-mobility handover reliability
+
+This would extend the project from current URLLC-based wireless reliability toward future connected and autonomous mobility networks.
+
+### 15.5 MEC-Based Low-Latency Decision Support
+
+Multi-access Edge Computing (MEC) can place computing resources closer to vehicles and roadside infrastructure. Instead of sending all data to a remote cloud, edge servers can process safety-critical information near the road.
+
+For autonomous driving, MEC could support:
+
+- local traffic prediction
+- cooperative perception
+- emergency message aggregation
+- low-latency decision support
+- intersection-level safety control
+
+Future work could integrate MEC into the current simulation structure and compare cloud-based, edge-based, and vehicle-only decision models. This would help evaluate whether edge computing can further reduce end-to-end reaction time in more complex driving environments.
+
+### 15.6 Network Slicing for Safety-Critical Traffic Isolation
+
+In real 5G and future 6G networks, autonomous driving traffic will coexist with ordinary mobile traffic, infotainment traffic, map updates, and sensor data. If all traffic shares the same network resources without isolation, safety-critical messages may be delayed by non-critical traffic.
+
+Network slicing can address this problem by creating a dedicated logical network slice for autonomous driving safety messages.
+
+A future extension could compare:
+
+- ordinary shared network traffic
+- dedicated V2X safety slice
+- separate infotainment and safety slices
+- dynamic resource allocation between slices
+- slice failure and recovery scenarios
+
+This would extend the current project from packet-level reliability to service-level network architecture.
+
+### 15.7 AI-Based Network Failure Prediction and Adaptive Control
+
+The current project uses predefined failure scenarios such as wired path failure, wireless packet loss, and combined failure. In real systems, failures may appear gradually through congestion, signal degradation, or abnormal jitter patterns.
+
+AI-based network monitoring could predict these failures before they directly affect emergency messages.
+
+Future research could combine latency-critical networking with AI-based control by using:
+
+- congestion prediction
+- packet loss prediction
+- adaptive routing
+- dynamic priority adjustment
+- automatic failover between wired, wireless, and redundant paths
+- anomaly detection for unstable V2X links
+
+This would turn the network from a static safety mechanism into an adaptive safety system.
+
+### 15.8 More Realistic Vehicle and Traffic Models
+
+This project focused on emergency braking in a simplified platooning environment. This was useful for isolating the relationship between network delay and collision risk. However, real autonomous driving includes more complex vehicle behavior.
+
+Future simulations could include:
+
+- adaptive cruise control
+- lane changing
+- multi-lane roads
+- curved roads
+- urban intersections
+- sensor fusion delays
+- heterogeneous vehicle types
+- human-driven vehicles mixed with autonomous vehicles
+
+This would make the safety analysis more realistic and would help evaluate how latency-critical networks perform under diverse driving conditions.
+
+### 15.9 Summary of Future Direction
+
+The future of autonomous driving networks is not simply about faster communication. The more important direction is building a communication system that can guarantee safety-critical performance under real-world uncertainty.
+
+This project can be extended from controlled platooning simulations toward a larger architecture that includes:
+
+- V2X infrastructure deployment
+- guaranteed latency and bounded jitter
+- scalable TSN and DetNet
+- 5G-Advanced and 6G mobility communication
+- MEC-based edge intelligence
+- network slicing for safety traffic
+- AI-based adaptive network control
+- realistic traffic and vehicle dynamics
+
+Therefore, the long-term direction is clear:
+
+> Autonomous driving networks must evolve from best-effort connectivity to deterministic, reliable, adaptive, and safety-aware communication systems.
+
+---
+
+## 16. Additional Materials
 
 * [Final presentation slides](docs/final-presentation.pdf)
 * [Midpoint report](docs/midpoint-report.pdf)
@@ -439,7 +599,7 @@ Despite these limitations, the project demonstrates the relative safety impact o
 
 ---
 
-## 16. Conclusion
+## 17. Conclusion
 
 This project shows that latency-critical network technologies are not only performance-enhancing mechanisms. In autonomous driving environments, they directly affect vehicle safety.
 
@@ -454,7 +614,7 @@ Therefore, future autonomous driving networks should not focus only on bandwidth
 
 ---
 
-## 17. References
+## 18. References
 
 [1] IEEE 802.1 Time-Sensitive Networking Task Group.
 https://1.ieee802.org/tsn/
