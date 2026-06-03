@@ -100,3 +100,11 @@ The integrated LCN approach combined the strengths of TSN, DetNet, and URLLC. It
 ## Overall Conclusion
 
 The simulation results show that latency-critical network technologies are not only performance-enhancing mechanisms. They directly contribute to autonomous driving safety by reducing delay, stabilizing jitter, preventing packet loss, and improving wireless communication reliability.
+
+---
+
+## Raw Result Files
+
+The raw CSV result files are available in [`results/raw/`](raw/).
+
+These files include spacing-based collision results, minimum gap values, final gap values, receiver lists, reaction maps, and scenario end reasons for each simulation configuration.
