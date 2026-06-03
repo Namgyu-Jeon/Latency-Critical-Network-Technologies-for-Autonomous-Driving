@@ -181,10 +181,18 @@ The first simulation compares a normal wired baseline network with a TSN-applied
 
 The purpose is to verify whether TSN can prioritize emergency braking messages and reduce delay and jitter.
 
-### 8.2 Related Implementation Files
+### 8.2 Related Materials
 
-* Baseline: [`simulation/scenario-1-wired-baseline-vs-tsn/wired-baseline/run_wired_baseline_platoon.py`](simulation/scenario-1-wired-baseline-vs-tsn/wired-baseline/run_wired_baseline_platoon.py)
-* TSN: [`simulation/scenario-1-wired-baseline-vs-tsn/tsn/run_tsn_platoon.py`](simulation/scenario-1-wired-baseline-vs-tsn/tsn/run_tsn_platoon.py)
+- Implementation files:
+  - Baseline: [`run_wired_baseline_platoon.py`](simulation/scenario-1-wired-baseline-vs-tsn/wired-baseline/run_wired_baseline_platoon.py)
+  - TSN: [`run_tsn_platoon.py`](simulation/scenario-1-wired-baseline-vs-tsn/tsn/run_tsn_platoon.py)
+
+- Raw result CSV files:
+  - Baseline: [`wired-baseline-summary.csv`](results/raw/scenario-1/wired-baseline-summary.csv)
+  - TSN: [`tsn-summary.csv`](results/raw/scenario-1/tsn-summary.csv)
+
+- Simulation videos:
+  - [Scenario 1 spacing-based simulation videos](docs/simulation-video-links.md#scenario-1-wired-baseline-vs-tsn)
 
 ### 8.3 Delay and Jitter Result
 
@@ -234,10 +242,18 @@ The main question is:
 
 > Is fast and deterministic delivery enough when packets can be lost?
 
-### 9.2 Related Implementation Files
+### 9.2 Related Materials
 
-* TSN Only: [`simulation/scenario-2-tsn-only-vs-tsn-detnet/tsn-only/run_tsn_only_wired_failure.py`](simulation/scenario-2-tsn-only-vs-tsn-detnet/tsn-only/run_tsn_only_wired_failure.py)
-* TSN + DetNet: [`simulation/scenario-2-tsn-only-vs-tsn-detnet/tsn-detnet/run_tsn_detnet_wired_failure.py`](simulation/scenario-2-tsn-only-vs-tsn-detnet/tsn-detnet/run_tsn_detnet_wired_failure.py)
+- Implementation files:
+  - TSN Only: [`run_tsn_only_wired_failure.py`](simulation/scenario-2-tsn-only-vs-tsn-detnet/tsn-only/run_tsn_only_wired_failure.py)
+  - TSN + DetNet: [`run_tsn_detnet_wired_failure.py`](simulation/scenario-2-tsn-only-vs-tsn-detnet/tsn-detnet/run_tsn_detnet_wired_failure.py)
+
+- Raw result CSV files:
+  - TSN Only: [`tsn-only-summary.csv`](results/raw/scenario-2/tsn-only-summary.csv)
+  - TSN + DetNet: [`tsn-detnet-summary.csv`](results/raw/scenario-2/tsn-detnet-summary.csv)
+
+- Simulation videos:
+  - [Scenario 2 spacing-based simulation videos](docs/simulation-video-links.md#scenario-2-tsn-only-vs-tsn--detnet)
 
 ### 9.3 Result Summary
 
@@ -284,10 +300,18 @@ The third simulation compares a wireless baseline environment with a URLLC-appli
 
 The purpose is to verify whether URLLC can improve wireless reliability and synchronized braking behavior in autonomous platooning.
 
-### 10.2 Related Implementation Files
+### 10.2 Related Materials
 
-* Wireless Baseline: [`simulation/scenario-3-wireless-baseline-vs-urllc/wireless-baseline/run_wireless_baseline_failure_platoon.py`](simulation/scenario-3-wireless-baseline-vs-urllc/wireless-baseline/run_wireless_baseline_failure_platoon.py)
-* URLLC: [`simulation/scenario-3-wireless-baseline-vs-urllc/urllc/run_urllc_wireless_failure_platoon.py`](simulation/scenario-3-wireless-baseline-vs-urllc/urllc/run_urllc_wireless_failure_platoon.py)
+- Implementation files:
+  - Wireless Baseline: [`run_wireless_baseline_failure_platoon.py`](simulation/scenario-3-wireless-baseline-vs-urllc/wireless-baseline/run_wireless_baseline_failure_platoon.py)
+  - URLLC: [`run_urllc_wireless_failure_platoon.py`](simulation/scenario-3-wireless-baseline-vs-urllc/urllc/run_urllc_wireless_failure_platoon.py)
+
+- Raw result CSV files:
+  - Wireless Baseline: [`wireless-baseline-summary.csv`](results/raw/scenario-3/wireless-baseline-summary.csv)
+  - URLLC: [`urllc-summary.csv`](results/raw/scenario-3/urllc-summary.csv)
+
+- Simulation videos:
+  - [Scenario 3 spacing-based simulation videos](docs/simulation-video-links.md#scenario-3-wireless-baseline-vs-urllc)
 
 ### 10.3 Collision Result
 
@@ -326,10 +350,18 @@ The fourth simulation evaluates the most extreme condition in this project. It c
 
 This scenario includes both wired path failure and wireless packet loss.
 
-### 11.2 Related Implementation Files
+### 11.2 Related Materials
 
-* Overall Baseline: [`simulation/scenario-4-overall-baseline-vs-integrated-lcn/overall-baseline/run_overall_baseline_combined_failure.py`](simulation/scenario-4-overall-baseline-vs-integrated-lcn/overall-baseline/run_overall_baseline_combined_failure.py)
-* Integrated LCN: [`simulation/scenario-4-overall-baseline-vs-integrated-lcn/integrated-lcn/run_integrated_lcn_combined_failure.py`](simulation/scenario-4-overall-baseline-vs-integrated-lcn/integrated-lcn/run_integrated_lcn_combined_failure.py)
+- Implementation files:
+  - Overall Baseline: [`run_overall_baseline_combined_failure.py`](simulation/scenario-4-overall-baseline-vs-integrated-lcn/overall-baseline/run_overall_baseline_combined_failure.py)
+  - Integrated LCN: [`run_integrated_lcn_combined_failure.py`](simulation/scenario-4-overall-baseline-vs-integrated-lcn/integrated-lcn/run_integrated_lcn_combined_failure.py)
+
+- Raw result CSV files:
+  - Overall Baseline: [`overall-baseline-summary.csv`](results/raw/scenario-4/overall-baseline-summary.csv)
+  - Integrated LCN: [`integrated-lcn-summary.csv`](results/raw/scenario-4/integrated-lcn-summary.csv)
+
+- Simulation videos:
+  - [Scenario 4 spacing-based simulation videos](docs/simulation-video-links.md#scenario-4-overall-baseline-vs-integrated-lcn)
 
 ### 11.3 Collision Result
 
