@@ -59,7 +59,7 @@ This scenario compares TSN-only communication with TSN + DetNet under wired path
 | 15 m | Crash | [Watch video](https://drive.google.com/file/d/1vohExFHRgpSTdrHoiX05NvJ8Wj11v3S8/view?usp=drive_link) |
 | 17 m | Crash | [Watch video](https://drive.google.com/file/d/1AlTSdge4c3D5CC_PmcEfZFUorHot0iaq/view?usp=drive_link) |
 | 19 m | Crash | [Watch video](https://drive.google.com/file/d/1rMYB6R1cw4gZRprECUFZEeBFflGff5md/view?usp=drive_link) |
-| 21 m | Safe | [Watch video](https://drive.google.com/file/d/10NfYVFrawROQxG_zdu0jBUo3KhilOKXq/view?usp=drive_link_HERE) |
+| 21 m | Safe | [Watch video](https://drive.google.com/file/d/10NfYVFrawROQxG_zdu0jBUo3KhilOKXq/view?usp=drive_link) |
 | 23 m | Safe | [Watch video](https://drive.google.com/file/d/1aopLfMSYDQHgHsTUBnIqu68uYIXJf6t-/view?usp=drive_link) |
 | 25 m | Safe | [Watch video](https://drive.google.com/file/d/1cuzEz8DOPYPl59oVuEOlqAXLFolx3A0T/view?usp=drive_link) |
 
