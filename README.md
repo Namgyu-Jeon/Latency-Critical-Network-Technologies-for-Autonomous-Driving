@@ -139,6 +139,7 @@ The simulation logic is implemented as Python scripts under the [`simulation/`](
 ```text
 latency-critical-network-autonomous-driving/
 ├── README.md
+├── .gitignore
 │
 ├── docs/
 │   ├── midpoint-report.pdf
@@ -156,14 +157,50 @@ latency-critical-network-autonomous-driving/
 │   └── sim4-overall-baseline-vs-integrated-lcn.png
 │
 ├── results/
-│   └── result-summary.md
+│   ├── result-summary.md
+│   └── raw/
+│       ├── scenario-1/
+│       │   ├── wired-baseline-summary.csv
+│       │   └── tsn-summary.csv
+│       │
+│       ├── scenario-2/
+│       │   ├── tsn-only-summary.csv
+│       │   └── tsn-detnet-summary.csv
+│       │
+│       ├── scenario-3/
+│       │   ├── wireless-baseline-summary.csv
+│       │   └── urllc-summary.csv
+│       │
+│       └── scenario-4/
+│           ├── overall-baseline-summary.csv
+│           └── integrated-lcn-summary.csv
 │
 ├── simulation/
 │   ├── README.md
+│   │
 │   ├── scenario-1-wired-baseline-vs-tsn/
+│   │   ├── wired-baseline/
+│   │   │   └── run_wired_baseline_platoon.py
+│   │   └── tsn/
+│   │       └── run_tsn_platoon.py
+│   │
 │   ├── scenario-2-tsn-only-vs-tsn-detnet/
+│   │   ├── tsn-only/
+│   │   │   └── run_tsn_only_wired_failure.py
+│   │   └── tsn-detnet/
+│   │       └── run_tsn_detnet_wired_failure.py
+│   │
 │   ├── scenario-3-wireless-baseline-vs-urllc/
+│   │   ├── wireless-baseline/
+│   │   │   └── run_wireless_baseline_failure_platoon.py
+│   │   └── urllc/
+│   │       └── run_urllc_wireless_failure_platoon.py
+│   │
 │   └── scenario-4-overall-baseline-vs-integrated-lcn/
+│       ├── overall-baseline/
+│       │   └── run_overall_baseline_combined_failure.py
+│       └── integrated-lcn/
+│           └── run_integrated_lcn_combined_failure.py
 │
 └── references/
     └── references.md
