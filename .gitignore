@@ -1,0 +1,36 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor settings
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Simulation output files
+*.sca
+*.vec
+*.vci
+*.csv
+results/**/*.csv
+simulation/**/*.csv
+
+# Large media files
+*.mp4
+*.mov
+*.avi
+*.mkv
